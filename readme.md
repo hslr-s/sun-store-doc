@@ -14,9 +14,9 @@
 
 - 克隆项目
 
-```bash
+<!-- ```bash
 git clone https://github.com/hslr-s/sun-panel-doc.git
-```
+``` -->
 
 - 安装依赖
 ```bash
