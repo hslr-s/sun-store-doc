@@ -1,0 +1,71 @@
+{
+	// Place your sun-store-doc 工作区 snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript,Markdown",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// },
+	"api": {
+		"scope": "markdown,typescript",
+		"prefix": "!api",
+		"body": [
+			"## ${1:接口标题}",
+			"",
+			"${2:接口功能描述}",
+			"",
+			"### 接口地址",
+			"",
+			"`${3:/oauth2/v1/token}`",
+			"",
+			"### 请求参数",
+			"",
+			"请求方式：`POST`",
+			"",
+			"参数说明：",
+			"",
+			"| 参数 | 类型 | 示例 | 说明 |",
+			"|---| --- | --- | --- |",
+			"| param | string | `client_credentials` | 固定值|",
+			"",
+			"",
+			"",
+			"请求示例:",
+			"```json",
+			"{",
+    "	\"grant_type\": \"client_credentials\",",
+			"}",
+			"```",
+			"",
+			"### 响应数据：",
+			"",
+			"参数说明：",
+			"",
+			"| 参数 | 类型 | 示例 | 说明 |",
+			"|---| --- | --- | --- |",
+			"| access_token | string | - | 授权令牌 |",
+			"",
+			"",
+			"完整示例：",
+			"```json",
+			"{",
+    "	\"code\": 0,",
+    "	\"data\": {",
+    "		",
+    "	},",
+    "	\"msg\": \"OK\"",
+			"}",
+			"```"
+		],
+		"description": "API接口示例"
+	}
+}
