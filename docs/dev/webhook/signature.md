@@ -8,7 +8,7 @@ outline: [2,3]
 1. 从Header获取到`SunStore-Signature`，格式为`ts=时间戳;h1=签名值`
 
 2. 生成签名
-- 将body中的数据（原始数据，不要做任何处理），将上一步的时间戳（ts）和body中的原始数据拼接(message)，用于生成签名，格式为`"JSON数据:时间戳"`。
+- 提取body中的数据（原始数据，不要做任何处理），将上一步的时间戳（ts）和body中的原始数据拼接(message)，格式为`"JSON数据:时间戳"`，用于生成签名。
 - 结合 拼接的数据（message） 和 私钥（secret） 使用HMAC SHA256算法生成签名，具体代码可以参考[生成签名](#generateSignature)
 
 3. 校验签名

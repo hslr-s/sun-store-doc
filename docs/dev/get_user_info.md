@@ -5,7 +5,7 @@
 
 ### 接口地址
 
-`/v1/u/user/getCurrentUserInfo`
+`/openApi/v1/u/user/getCurrentUserInfo`
 
 ### Header 参数
 
