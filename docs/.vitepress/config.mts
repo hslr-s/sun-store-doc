@@ -11,7 +11,7 @@ export default defineConfig({
     ],
 
     sidebar: {
-      "/":[
+      "/": [
 
         {
           text: '部署',
@@ -34,12 +34,24 @@ export default defineConfig({
           items: [
             { text: '应用授权登录', link: '/dev/oauth2' },
             { text: '获取用户信息', link: '/dev/get_user_info' },
-            { text: '客户端相关API', link: '/dev/client' },
-            { text: 'Webhook', link: '/dev/webhooks' },
+            {
+              text: '客户端相关API', link: '/dev/clientApi/index', items: [
+                { text: '全局说明', link: '/dev/clientApi/global' },
+                { text: '订单相关', link: '/dev/clientApi/order' },
+              ]
+            },
+            { text: 'Webhook', 
+              // link: '/dev/webhook/' ,
+              items: [
+                { text: '全局说明', link: '/dev/webhook/global' },
+                { text: '签名验证', link: '/dev/webhook/signature' },
+                // { text: '订单相关', link: '/dev/webhook/order' },
+              ]
+            },
           ]
-          
+
         },
-     
+
 
       ]
     },
