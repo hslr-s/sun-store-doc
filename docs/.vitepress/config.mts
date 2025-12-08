@@ -33,11 +33,13 @@ export default defineConfig({
           text: '开发文档',
           items: [
             { text: '应用授权登录', link: '/dev/oauth2' },
+            { text: '商品购买资格验证（三方API）', link: '/dev/goodsBuyQualificationCheck' },
             { text: '获取用户信息', link: '/dev/get_user_info' },
             {
               text: '客户端相关API', link: '/dev/clientApi/index', items: [
                 { text: '全局说明', link: '/dev/clientApi/global' },
                 { text: '订单相关', link: '/dev/clientApi/order' },
+                { text: '邮件', link: '/dev/clientApi/email' },
               ]
             },
             { text: 'Webhook', 
@@ -46,6 +48,13 @@ export default defineConfig({
                 { text: '全局说明', link: '/dev/webhook/global' },
                 { text: '签名验证', link: '/dev/webhook/signature' },
                 // { text: '订单相关', link: '/dev/webhook/order' },
+              ]
+            },
+            { text: 'Sun-Store-PAY', 
+              // link: '/dev/webhook/' ,
+              link: '/dev/sun-store-pay/index.md' ,
+              items: [
+                
               ]
             },
           ]
